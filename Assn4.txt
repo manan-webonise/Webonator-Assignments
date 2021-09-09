@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+    <label for="title">Name</label>
+    <input type="text" id="title" aria-describedby="emailHelp">
+    <br><br>
+
+
+    <label for="description">Email</label>
+    <textarea id="description" rows="1"></textarea>
+
+    <br><br> <button id="add" onclick="">Add</button>
+    <br> <br> <button onclick="myfunc()">SHOW USERS</button>
+    <div id="items">
+
+        <table id="table" class="table" style="display: none;">
+            <thead>
+                <tr>
+                    <th scope="col">SNo</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <tr>
+
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+    </div>
+
+    <script>
+        function getAndUpdate() {
+            console.log("Updating List...");
+            tit = document.getElementById('title').value;
+            desc = document.getElementById('description').value;
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                itemJsonArray.push([tit, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+                itemJsonArray.push([tit, desc]);
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            update();
+        }
+
+        function update() {
+            if (localStorage.getItem('itemsJson') == null) {
+                itemJsonArray = [];
+                localStorage.setItem('itemsJson', JSON.stringify(itemJsonArray))
+            }
+            else {
+                itemJsonArrayStr = localStorage.getItem('itemsJson')
+                itemJsonArray = JSON.parse(itemJsonArrayStr);
+            }
+
+            let tableBody = document.getElementById("tableBody");
+            let str = "";
+            const date = new Date();
+            itemJsonArray.forEach((element, index) => {
+                str += `
+                    <tr>
+                    <th scope="row">${index + 1}</th>
+                    <td>${element[0]}</td>
+                    <td>${element[1]}</td>
+                    <td>${date}</td>
+                    </tr>`;
+            });
+            tableBody.innerHTML = str;
+        }
+        add = document.getElementById("add");
+        add.addEventListener("click", getAndUpdate);
+        update();
+    </script>
+    <script>
+        function myfunc() {
+            document.getElementById("table").removeAttribute("style");
+        }
+    </script>
+</body>
+
+</html>
