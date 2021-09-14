@@ -1,0 +1,16 @@
+const num = window.prompt("Enter numbers");
+const nums = num.split(",");
+const arr = nums.sort();
+for(let i=0; i<arr.length; i++){
+let k = arr[i]; //k=2
+let j = i+1; //j=2 arrj = 2
+let count = 1;
+    while(arr[j]==k){
+    count++; //count 2
+    j++;
+    }
+    if(count!=1){
+        i = i+count-1;
+    }
+    console.log(k+": "+count);
+}
