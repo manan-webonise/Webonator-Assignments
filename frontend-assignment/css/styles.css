@@ -1,0 +1,134 @@
+.body {
+    font-family: Georgia;
+    font-size: 13px;
+    color: #222222;
+}
+
+.logo {
+    margin-left: 5%;
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+}
+
+.menu {
+    height: 1%;
+    background-color: #3355aa;
+    color: white;
+    font-style: italic;
+    padding-left: 5%;
+    padding-right: 5%;
+    align-items: center;
+}
+
+.opt {
+    padding: 0.5% 1% 0.5% 1%;
+}
+
+.search {
+    float: right;
+    margin: 0.2% 0% 0.2% auto;
+    border-radius: 5%;
+    background-color: white;
+    color: #3355aa;
+    padding: 0.3% 5% 0.3% 1%;
+
+}
+
+.m1 {
+    padding: 2% 5% 2% 5%;
+}
+
+.m2 {
+    background-color: #dde2eb;
+    padding: 1% 5% 3% 5%;
+    border-top: 1px solid gray;
+}
+
+#card {
+    box-shadow: 1px 1px 1px 1px gray;
+    border-radius: 1%;
+    padding: 1%;
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    display:inline;
+    width: 50%
+}
+
+#cardtext {
+    padding: 2%;
+}
+
+#minicol {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+#image1{
+  width:100%;
+
+}
+#heading {
+    color: #3355aa;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#headhr {
+    background-color: #ffdb0f;
+    height: 2px;
+}
+
+#comment {
+    font-style: italic;
+}
+
+#commenter {
+    font-size: 10px;
+}
+
+#more {
+    color: #3355aa;
+    font-style: italic;
+}
+
+#sect {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+#card2 {
+    box-shadow: 1px 1px gray;
+    border-radius: 1%;
+    padding: 1%;
+    margin: auto 1% auto 1%;
+    font-size: 16px;
+    text-align: center;
+    color: #3355aa;
+    background-color: white;
+}
+
+.box {
+    height: 250px;
+    width: auto;
+    background-color: #bfbbae;
+}
+
+.footer {
+    padding: 1% 5% 2% 5%;
+    background-color: #333333;
+    color: whitesmoke;
+    font-size: 11px;
+}
+
+.footopt {
+    font-size: 14px;
+    padding: 0% 0.5% 0% 0.5%;
+    float: left;
+}
+
+.footopt2 {
+    padding: 0% 0.5% 0% 0.5%;
+    float: right;
+}
