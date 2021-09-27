@@ -1,9 +1,7 @@
-# Ruby - Chapter 1 Assessment.
-
+# Ruby Assignment 1
 
 # Q.1) Compute the sum of cubes for a given range a through b. Write a method called sum_of_cubes to accomplish this task.
 #      Example : Given range 1 to 3 the method should return 36.
-# Answer -->
 
 '''
 def sum_of_cubes(a, b)
@@ -21,7 +19,6 @@ sum_of_cubes(1, 3)
 
 # Q.2) Given an Array, return the elements that are present exactly once in the array. You need to write a method called
 #      non_duplicated_values to accomplish this task. Example : Given [1,2,2,3,3,4,5], the method should return [1,4,5].
-# Answer -->
 
 '''
 def non_duplicated_values()
@@ -40,7 +37,6 @@ result = non_duplicated_values()
 
 
 # Q.3)  Given a sentence,return true if the sentence is a palindrome.You are supposed to write a method palindrome?to accomplish the task.
-# Answer -->
 
 '''
 def palindrome(word)
@@ -58,7 +54,6 @@ status = palindrome("nitin")
 # Q.4) 9 is a Kaprekar number since 9 ^ 2 = 81 and 8 + 1 = 9, 297 is also Kaprekar number since 297 ^ 2 = 88209 and 88 + 209 = 297.
 #      In short, for a Kaprekar number k with n-digits, if you square it and add the right n digits to the left n or n-1 digits,
 #      the resultant sum is k. Find if a given number is a Kaprekar number.
-# Answer -->
 
 '''
 def isKaprekar(num)
@@ -86,7 +81,6 @@ string2 = "RUBY does not require (or support) explicit type definition in variab
 
 
 # Q.5)  Find occurrence of RUBY from string 1.
-# Answer -->
 
 '''
 def findOccurrence(mystring, substr)
@@ -98,7 +92,6 @@ puts (findOccurrence(string1, "RUBY"))
 
 
 # Q.6) Find the position where RUBY occurs in the string 1.
-# Answer -->
 
 '''
 def findPosition(mystring, sub_string)
@@ -114,7 +107,6 @@ findPosition(string1, "RUBY")
 
 
 # Q.7) Create array of words in string 1 & print them using a recursive function.
-# Answer -->
 
 '''
 def strRecurse(i,string1)
@@ -132,7 +124,6 @@ str_recurse(i,string1)
 
 
 # Q.8) Capitalise string 1.
-# Answer -->
 
 '''
 def str_capitalise(string1)
@@ -144,7 +135,6 @@ str_capitalise(string1)
 
 
 # Q.9) Combine string 1 & 2.
-# Answer -->
 
 '''
 def strCombine(string1,string2)
@@ -156,7 +146,6 @@ puts strCombine(string1,string2)
 
 
 # Q.10) Print current date.
-# Ansewer -->
 
 '''
 require "date"
@@ -170,7 +159,6 @@ puts Date()
 
 
 # Q.11) print date format 12th Jan 2012.
-# Answer -->
 
 '''
 require "date"
@@ -184,7 +172,6 @@ puts dateFormat()
 
 
 # Q. 12) add 7 days in current date.
-# Answer -->
 
 '''
 require "date"
@@ -198,7 +185,6 @@ puts date_format()
 
 
 # Q.13) Cut the string 1 into 4 parts & print it.
-# Answer -->
 
 '''
 def str_division(string1)
@@ -217,7 +203,6 @@ puts str_division(string1)
 
 
 # Q.14) Divide the string 1 by occurrences of '.'. Combine the array in reverse word sequence
-# Answer -->
 
 '''
 def str_occur_rev(string1)
@@ -229,8 +214,6 @@ puts str_occur_rev(string1)
 
 
 # Q.15) Remove the HTML characters from string.
-# Answer -->
-
 '''
 def remove_html(string1)
 	return string1.gsub(/<\/?[^>]*>/, "")
@@ -241,8 +224,6 @@ puts remove_html(string1)
 
 
 # Q.16) Print the 'RUBY' word from string 1 by traversing it using string functions.
-# Answer -->
-
 '''
 def str_travers(string1)
 	string1.split(' ').each { |i|
@@ -258,7 +239,6 @@ str_travers(string1)
 
 
 # Q.17) Find the length of string 1 & 2.
-# Answer -->
 
 '''
 def strSize(string1,string2)
@@ -271,7 +251,6 @@ strSize(string1,string2)
 
 
 # Q.18) Compare two dates. (12-04-2010 & 12-05-2011). Calculate the days between these two dates.
-# Answer -->
 
 '''
 require "date"
@@ -284,7 +263,6 @@ compare_date()
 
 
 # Q.19) Print date after 20 days from current date.
-# Answer -->
 
 '''
 require "date"
@@ -298,7 +276,6 @@ puts date_format()
 
 
 # Q.20) Print date in array format.
-# Answer -->
 
 '''
 require "date"
@@ -312,7 +289,6 @@ puts date_arr_format()
 
 
 # Q.21) Print prime numbers from the given array.
-# Answer -->
 
 '''
 require "prime"
@@ -335,8 +311,6 @@ str_travers([2, 3, 5, 1])
 
 # Q. 22) Write a program for fuel indication.
 #        Ex: 0 -> Out of fuel, 1-10 -> Low, Please fill, 11-30 -> Good for now, 31-50 -> Almost Full, > 50 -> Full.
-# Answer -->
-
 '''
 def check_fual(i)
 	case i
@@ -365,7 +339,6 @@ puts check_fual(50)
 
 
 # Q. 23) Swap the given values(without the third variable)
-# Answer -->
 
 '''
 def swap_variable(a,b)
@@ -381,7 +354,6 @@ swap_variable(1,2)
 
 
 # Q. 24) Program to Randomly Select an Element From the Array
-# Answer -->
 
 '''
 arr = [1, 2, 3]
@@ -394,7 +366,6 @@ puts select_random(arr)
 
 
 # Q.25) Program to Count the Number of Each Vowel.
-# Answer -->
 
 '''
 def vowels(string)
@@ -407,7 +378,6 @@ vowels("Welcome to webonise!")
 
 
 # Q.26) Program to Sort a Hash by Value.
-# Answer -->
 
 '''
 def hash_sort()
@@ -420,7 +390,6 @@ hash_sort()
 
 
 # Q.27) Program to Convert Two Arrays Into a Hash.
-# Answer -->
 
 '''
 def combined_hash()
